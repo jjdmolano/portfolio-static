@@ -6,10 +6,6 @@ font-family: 'Fira Sans', sans-serif;
 color:black;
 }
 
-html, body {
-	height:100%
-}
-
 @media screen and (min-width: 767px) {
 	html {
 		font-size:1rem;
@@ -34,7 +30,6 @@ html, body {
 	background-color:#EFEFEF;
 	padding-left:0;
 	padding-right:0;
-	min-height:100%;
 }
 
 .mini-header {
