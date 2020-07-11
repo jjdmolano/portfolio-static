@@ -5,88 +5,102 @@ box-sizing: border-box;
 font-family: 'Fira Sans', sans-serif;
 color:black;
 }
-	
+
+html, body {
+	height:100%
+}
+
 @media screen and (min-width: 767px) {
-	.text, .text-2 {
-		font-size: 1em;
+	html {
+		font-size:1rem;
 	}
-	.text-big {
-		font-size: 1.3em;
+
+	.container {
+		width:80%;
 	}
 }
 
 @media screen and (max-width: 766px) {
-	.text, .text-2 {
-		font-size: 0.7em;
+	html {
+		font-size:0.8rem;
 	}
-	.text-big {
-		font-size: 0.8em;
-	}
-}
 
-html, body {
-	height:100vh;
+	.container {	
+		width:60%;
+	}
 }
 
 .container-fluid {
-	height:100vh;
-}
-
-#main-body {
-	background-color:#FFFFFF;
-	align-items:center;
-}
-
-#header {
 	background-color:#EFEFEF;
+	padding-left:0;
+	padding-right:0;
+	min-height:100%;
 }
 
 .mini-header {
 	background-color:#EFEFEF;
+	width:100%;
+	max-height:5rem;
 }
 
-#mini-header-1 {
-	background-color:#383961;
+.nav-header {
+	background-color:#706C61;
 }
 
-#mini-header-2 {
-	background-color:#5F758E;
+.col-block {
+	background-color:#FFFFFF;
 }
 
-#mini-header-3 {
-	background-color:#9DAA9D;
+.main-header {
+	background-color:#706C61;
+	min-height:3rem;	
 }
 
-#mini-header-4 {
-	background-color:#3B1F2B;
-}
-
-#mini-header-5 {
-	background-color:#8B7F6C;
+.top-header {
+	background-color:#706C61;
+	min-height:3rem;
+	margin-top:10%; 	
 }
 
 .carousel-caption > h5, .carousel-caption > p {
-	color:#FFFFFF;
+	color:#EFEFEF;
 	text-shadow: 1px 1px #04080F;
+}
+.nav {
+	background-color:#706C61;
 }
 
 .nav-item > .active {
 	border-bottom:solid;
-	border-bottom-color:#383961;
+	border-bottom-color:#EFEFEF;
 }
 
 .nav-link {
 	color:#000000;
 }
 
+.nav-foot {
+	color:#EFEFEF;
+}
+
 .nav li a:hover {	
 	border-bottom:solid;
-	border-bottom-color:#EFEFEF;
-    color:#383961;
+	border-bottom-color:#837E72;
+    color:#EFEFEF;
 }
 
 ul {
 	list-style-type:none;
+}
+
+.nav-button {
+	color:#EFEFEF;
+	background-color:#706C61;	
+}
+
+.btn-dark {
+	background-color:#706C61;
+	border-color:#706C61;
 }
 
 .text {	
@@ -95,7 +109,8 @@ ul {
 }
 
 .input-group-text {
-	background-color:#EFEFEF;
+	background-color:#706C61;
+	color:#EFEFEF;
 }
 
 .personal-links {
