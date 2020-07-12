@@ -8,7 +8,8 @@ color:black;
 }
 
 html, body {
-	height:100%;
+	height:100vh;
+	width:100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -23,34 +24,43 @@ html, body {
 	.container-fluid {
 	background: 
 		url(../images/bg-left.svg) left center no-repeat,
-		url(../images/bg-topleft.svg) 17% 10% no-repeat,
+		url(../images/bg-topright.svg) 91% 10% no-repeat,
 		url(../images/bg-botleft.svg) 11% 90% no-repeat,
-		url(../images/bg-botright.svg) 87% 90% no-repeat,
+		url(../images/bg-botright.svg) 82% 87% no-repeat,
 		url(../images/bg-right.svg) right center no-repeat;
+	}
+
+	.main-row {
+		height:80vh;
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	html {
-		font-size:0.8rem;
+		font-size:0.9rem;
 	}
 
 	.container {
 		width:70%;
 	}
+
 	.container-fluid {
 	background: 
 		url(../images/bg-left.svg) left center no-repeat,
-		url(../images/bg-topleft.svg) left 10% no-repeat,
+		url(../images/bg-topright.svg) right 10% no-repeat,
 		url(../images/bg-botleft.svg) left 90% no-repeat,
-		url(../images/bg-botright.svg) right 90% no-repeat,
+		url(../images/bg-botright.svg) right 87% no-repeat,
 		url(../images/bg-right.svg) right center no-repeat;
+	}
+
+	.main-row {
+		height:100%;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	html {
-		font-size:0.7rem;
+		font-size:0.8rem;
 	}
 
 	.container {	
@@ -59,6 +69,10 @@ html, body {
 
 	.container-fluid {
 	background: none;
+	}
+
+	.main-row {
+		height:80%;
 	}
 }
 
