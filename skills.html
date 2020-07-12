@@ -21,7 +21,7 @@
 		<!-- body -->
 		<div class="row justify-content-center no-gutters">
 			<!-- block 1 -->
-			<div class="col-12 col-md-5 col-block mt-4 my-md-3 mr-md-3 text-center">
+			<div class="col-12 col-md-5 tile mt-4 my-md-3 mr-md-3 text-center">
 				<img src="./assets/images/front-end.svg" class="img-fluid mini-header mb-1" alt="mini-header">
 				<div class="row justify-content-center no-gutters p-2 px-4 w-100">
 					<div class="col">	
@@ -42,7 +42,7 @@
 				</div>
 			</div>
 			<!-- block 2 -->
-			<div class="col-12 col-md-5 col-block mt-4 my-md-3 mr-md-3 text-center">
+			<div class="col-12 col-md-5 tile mt-4 my-md-3 mr-md-3 text-center">
 				<img src="./assets/images/back-end.svg" class="img-fluid mini-header mb-1" alt="mini-header">
 				<div class="row justify-content-center no-gutters p-2 px-4 w-100">
 					<div class="col">	
@@ -60,10 +60,10 @@
 				</div>
 			</div>
 			<!-- block 3 -->
-			<div class="col-12 col-md-5 col-block mt-4 my-md-3 ml-md-3">
+			<div class="col-12 col-md-5 tile mt-4 my-md-3 ml-md-3">
 				<div class="row no-gutters justify-content-center">
 					<div class="col">
-						<img src="./assets/images/qualities.svg" class="img-fluid mini-header" class="" alt="mini-header">
+						<img src="./assets/images/qualities.svg" class="img-fluid mini-header" alt="mini-header">
 						<ul class="pt-3">
 							<li>
 								<p class="text text-left mx-2">
@@ -95,10 +95,10 @@
 				</div>
 			</div>
 			<!-- block 4 -->
-			<div class="col-12 col-md-5 col-block mt-4 ml-md-3 my-md-3 mr-md-3 mb-4 mb-md-0">
+			<div class="col-12 col-md-5 tile mt-4 ml-md-3 my-md-3 mr-md-3 mb-5 mb-md-0">
 				<div class="row no-gutters justify-content-center">
 					<div class="col">
-					<img src="./assets/images/certificates.svg" class="img-fluid mini-header" class="" alt="mini-header">
+					<img src="./assets/images/certificates.svg" class="img-fluid mini-header" alt="mini-header">
 					<ul class="pt-4 w-100">
 						<li>
 							<p class="text text-left mx-2">
@@ -138,16 +138,18 @@
 		<!-- block navi end -->
 		<!-- mobile footer -->
 		<div class="row fixed-bottom justify-content-end mr-2 pb-2 d-sm-none">
-			<div class="btn-group dropup">
-				<button type="button" class="btn btn-dark justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<i class="fas fa-bars fa-2x nav-button"></i>
-				</button>
-				<div class="dropdown-menu">
-					<a class="nav-link text-center px-0" href="./index.html">About</a>
-					<a class="nav-link text-center px-0 active" href="./skills.html">Skills</a>
-					<a class="nav-link text-center px-0" href="./contact.html">Contact</a>
-				</div>
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label class="btn btn-secondary">
+					<input type="radio" name="options" id="option1"><a class="nav-foot" href="./index.html">About</a>
+				</label>
+				<label class="btn btn-secondary active" id="active-button">
+					<input type="radio" name="options" id="option2" checked><a class="nav-foot" href="./skills.html">Skills</a>
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" name="options" id="option3"><a class="nav-foot" href="./contact.html">Contact</a>
+				</label>
 			</div>
+		</div>
 			<!-- mobile footer end -->
 		</div>
 	</div>

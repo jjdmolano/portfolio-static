@@ -20,10 +20,11 @@
 			</div>
 		</div>
 		<!-- body -->
-		<div class="row justify-content-center align-items-center no-gutters main-body">
+		<div class="row justify-content-center align-items-center no-gutters">
 			<!-- block 1 -->
-			<div class="col-12 col-md-2 col-block mt-4 my-md-3 text-center mr-md-3">
-				<img src="./assets/images/links.svg" class="img-fluid mini-header" class="" alt="mini-header">
+			<div class="col-12 col-md-2 mt-md-4 my-md-3 text-center order-2 order-md-1 mr-md-3">
+				<img src="./assets/images/links.svg" class="img-fluid mini-header" alt="mini-header">
+				<div class="tile">
 				<ul class="text-left p-3 pl-4">
 					<li>
 						<i class="fab fa-gitlab fa-2x img-fluid"></i>
@@ -43,12 +44,13 @@
 						+63-9177155627
 					</li>
 				</ul>
+				</div>
 			</div>
 			<!-- block 2 -->
-			<div class="col-12 col-md-5 col-block h-100 mx-md-3 my-4">
+			<div class="col-12 col-md-5 tile h-100 order-1 order-md-2 mx-md-3 my-4">
 				<img src="./assets/images/message.svg" class="img-fluid mini-header" alt="mini-header">
 				<div class="row justify-content-center no-gutters mt-3 mb-3">
-					<div class="col-10 mt-5 mb-2">
+					<div class="col-10 mt-3 mb-2">
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text text" id="basic-addon3">Full Name</span>
@@ -72,16 +74,16 @@
 							<textarea class="form-control text" aria-label="With textarea"></textarea>
 						</div>
 					</div>
-					<div class="col-3 mt-3 mt-md-5 mb-3 mb-md-5">	
-						<button type="submit" class="btn btn-dark">Submit</button>
+					<div class="col-3 mt-2 mt-md-3 mb-2 mb-md-3" align="center">	
+						<button type="submit" class="btn btn-secondary">Submit</button>
 					</div>
 				</div>
 			</div>
 			<!-- block 3 -->
-			<div class="col-12 col-md-3 mt-0 mt-md-4 h-100 ml-md-3 mb-4 mb-md-0">
+			<div class="col-12 col-md-3 order-4 mt-3 mt-md-4 h-100 ml-md-3 mb-5 mb-md-0">
 				<div class="row no-gutters">
 					<!-- mini-block-1 -->
-					<div class="col-12 col-block">
+					<div class="col-12">
 						<img src="./assets/images/location.svg" class="img-fluid mini-header" alt="mini-header">
 					</div>
 					<!-- mini-block-2 -->
@@ -114,15 +116,16 @@
 		<!-- block navi end -->
 		<!-- mobile footer -->
 		<div class="row fixed-bottom justify-content-end mr-2 pb-2 d-sm-none">
-			<div class="btn-group dropup">
-				<button type="button" class="btn btn-dark justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<i class="fas fa-bars fa-2x nav-button"></i>
-				</button>
-				<div class="dropdown-menu">
-					<a class="nav-link text-center px-0" href="./index.html">About</a>
-					<a class="nav-link text-center px-0" href="./skills.html">Skills</a>
-					<a class="nav-link text-center px-0 active" href="./contact.html">Contact</a>
-				</div>
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label class="btn btn-secondary">
+					<input type="radio" name="options" id="option1"><a class="nav-foot" href="./index.html">About</a>
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" name="options" id="option2"><a class="nav-foot" href="./skills.html">Skills</a>
+				</label>
+				<label class="btn btn-secondary active" id="active-button">
+					<input type="radio" name="options" id="option3" checked><a class="nav-foot" href="./contact.html">Contact</a>
+				</label>
 			</div>
 		</div>
 		<!-- mobile footer end -->
