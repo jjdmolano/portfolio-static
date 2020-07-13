@@ -81,11 +81,21 @@ html, body {
 	padding-left:0;
 	padding-right:0;
 	min-height:100%;
+	animation: bg-fade 0.4s forwards 0s ease-in;
+}
+
+.carousel {
+	animation: tile-fade 0.2s forwards 0s ease-in;
+}
+
+.map {
+	animation: tile-fade 0.2s forwards 0s ease-in;
 }
 
 .top-header {
 	background-color:#F3F5F7;
-	min-height:4rem; 	
+	min-height:4rem;
+	animation: anim-top 0.4s forwards 0s ease-in; 	
 }
 
 .main-header {
@@ -97,14 +107,17 @@ html, body {
 	background-color:#F3F5F7;
 	width:100%;
 	max-height:5rem;
+	animation: anim-headers 0.4s forwards 0s ease-in;
 }
 
 .nav-header {
 	background-color:#F3F5F7;
+	animation: anim-headers 0.4s forwards 0s ease-in;
 }
 
 .tile {
-	background-color:#FFFFFF;	
+	background-color:#FFFFFF;
+	animation: tile-fade 0.2s forwards 0s ease-in;
 }
 
 .carousel-caption > h5, .carousel-caption > p {
@@ -114,6 +127,7 @@ html, body {
 
 .nav {
 	background-color:#F3F5F7;
+	animation: anim-headers 0.4s forwards 0s ease-in;
 }
 
 .nav-foot {
@@ -157,4 +171,52 @@ ul {
 
 .personal-links {
 	color:#000000;
+}
+
+.mini-header{
+    
+}
+
+@keyframes anim-headers{
+    0%{
+        transform: rotate(0deg) translateY(100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0deg) translateY(0%);
+        opacity: 1;
+        }
+}
+
+@keyframes anim-top{
+    0%{
+        transform: rotate(0deg) translateY(-100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0deg) translateY(0%);
+        opacity: 1;
+        }
+}
+
+@keyframes tile-fade{
+    0%{
+        transform: rotate(0deg) scale(0.6) translateY(0%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0deg) scale(1) translateY(0%);
+        opacity: 1;
+        }
+}
+
+@keyframes bg-fade{
+    0%{
+        transform: rotate(0deg) translateY(0%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0deg) translateY(0%);
+        opacity: 1;
+        }
 }
