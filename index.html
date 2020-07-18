@@ -14,15 +14,28 @@
 
 	<div class="container-fluid">
 		<!-- header -->
-		<div class="row justify-content-start align-items-start no-gutters main-header">
-			<div class="col-auto">
+		<div class="row no-gutters main-header justify-content-between">
+			<div class="col-3 align-self-start justify-self-start">
 				<img src="./assets/images/head.svg" class="top-header" alt="top-header">
+			</div>
+			<div class="col-4 justify-self-end align-self-start d-none d-md-block">
+				<ul class="nav nav-top nav-fill justify-content-center align-items-end">
+					<li class="nav-item">
+						<a class="nav-link nav-foot active" href="./index.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-foot" href="./skills.html">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-foot" href="./contact.html">Contact</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<!-- body -->
 		<div class="row justify-content-center align-items-center no-gutters main-row">
 			<!-- block 1 -->
-			<div class="col-12 col-md-4 col-lg-2 mt-4 my-md-3 text-center order-2 order-lg-1 mr-md-3">
+			<div class="col-8 col-md-4 col-lg-2 mt-0 my-md-3 text-center order-2 order-lg-1">
 				<img src="./assets/images/profile.svg" class="mini-header img-fluid" alt="mini-header">
 				<div class="tile">	
 					<div class="container px-5 px-md-4 py-3">	
@@ -34,7 +47,7 @@
 				</div>
 			</div>
 			<!-- block 2 -->
-			<div class="col-12 col-md-8 col-lg-5 order-1 order-lg-2 mx-md-3 my-4">
+			<div class="col-8 col-md-8 col-lg-5 order-1 order-lg-2 mx-md-3 my-4">
 				<img src="./assets/images/projects.svg" class="img-fluid mini-header" alt="mini-header">
 				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
@@ -45,24 +58,12 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img src="./assets/images/carousel-1.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption d-none d-md-block">
-								<h5>One</h5>
-								<p>You're like a dream come true</p>
-							</div>
 						</div>
 						<div class="carousel-item">
 							<img src="./assets/images/carousel-2.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption d-none d-md-block">
-								<h5>Two</h5>
-								<p>Just want to be with you</p>
-							</div>
 						</div>
 						<div class="carousel-item">
 							<img src="./assets/images/carousel-3.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption d-none d-md-block">
-								<h5>Three</h5>
-								<p>Girl it's plain to see, that you're the only one for me</p>
-							</div>	
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -76,34 +77,23 @@
 				</div>
 			</div>
 			<!-- block 3 -->
-			<div class="col-12 col-md-4 col-lg-3 mt-0 mt-md-4 ml-md-3 mb-5 mb-md-0 order-4">
-				<div class="row no-gutters">
-					<!-- mini-block-1 -->
-					<div class="col-12">
-						<img src="./assets/images/about.svg" class="mini-header" alt="mini-header">
-						<div class="tile">
-							<p class="text text-center mx-3 py-3">
-								Accustomed to working in a corporate environment as a licensed mechanical engineer for 5 years; Now pursuing web development as a primary field of work.
-							</p>	
-						</div>
-					</div>
-					<!-- mini-block-2 -->
-					<div class="col-12">
-						<img src="./assets/images/hobbies.svg" class="mini-header" alt="mini-header">
-						<div class="tile">
-							<p class="text text-center mx-3 py-3">
-								Favorites include listening to music, drinking coffee, and playing online games. 
-							</p>
-						</div>
-					</div>
+			<div class="col-8 col-md-4 col-lg-2 mt-0 my-md-3 text-center order-4 mb-5 mb-md-0">
+				<img src="./assets/images/about.svg" class="mini-header" alt="mini-header">
+				<div class="tile">
+					<p class="text text-center mx-3 py-3">
+						Accustomed to working in a corporate environment as a licensed mechanical engineer for 5 years; Now pursuing web development as a primary field of work and as a passion.
+					</p>
+					<p class="text text-center mx-3 pb-3">
+						Hobbies include listening to music, drinking coffee, and playing online games. 
+					</p>	
 				</div>
 			</div>
 		</div>
 		<!-- body end -->
 		<!-- block navi -->
-		<div class="row fixed-bottom no-gutters d-none d-sm-block">
+		<div class="row fixed-bottom no-gutters nav-foot d-block d-md-none">
 			<div class="col">
-				<ul class="nav nav-fill justify-content-center align-items-end">
+				<ul class="nav nav-bot nav-fill justify-content-center align-items-end">
 					<li class="nav-item">
 						<a class="nav-link nav-foot active" href="./index.html">About</a>
 					</li>
@@ -113,28 +103,9 @@
 					<li class="nav-item">
 						<a class="nav-link nav-foot" href="./contact.html">Contact</a>
 					</li>
-					<li>
-						<img src="./assets/images/nav.svg" class="img-fluid mini-header nav-header" alt="mini-header">
-					</li>
-				</ul>
 			</div>
 		</div>
 		<!-- block navi end -->
-		<!-- mobile footer -->
-		<div class="row fixed-bottom justify-content-end mr-2 pb-2 d-sm-none">
-			<div class="btn-group btn-group-toggle" data-toggle="buttons">
-				<label class="btn btn-secondary active" id="active-button">
-					<input type="radio" name="options" id="option1" checked><a class="nav-foot-button" href="./index.html">About</a>
-				</label>
-				<label class="btn btn-secondary">
-					<input type="radio" name="options" id="option2"><a class="nav-foot-button" href="./skills.html">Skills</a>
-				</label>
-				<label class="btn btn-secondary">
-					<input type="radio" name="options" id="option3"><a class="nav-foot-button" href="./contact.html">Contact</a>
-				</label>
-			</div>
-		</div>
-			<!-- mobile footer end -->
 	</div>
 	<script src="./assets/js/jquery-3.5.1.min.js"></script>
 	<script src="./assets/js/popper.min.js"></script>
